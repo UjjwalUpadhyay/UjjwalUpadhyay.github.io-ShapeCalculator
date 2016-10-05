@@ -1,0 +1,15 @@
+<p class="font-large middle"> Step {{stepNum}}: Your results </p>
+<p class="font-normal"> You have calculated the area of a {{selectedShape}} with
+   <span class="" ng-repeat="param in selectedShapeData[0].params">
+     {{param.name}} of {{param.value}}
+   </span>
+  .Below is your result:
+</p>
+<div class="results-container"
+  <p class="font-large"> The Area is {{area}} </p>
+</div>
+<div class="btn-container">
+  <button type="submit" ng-click="selectView4()">
+    Start over
+  </button>
+</div>

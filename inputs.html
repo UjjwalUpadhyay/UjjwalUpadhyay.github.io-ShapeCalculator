@@ -1,0 +1,16 @@
+<p class="font-large middle"> Step {{stepNum}}: Insert your values </p>
+<p class="font-normal"> You have selected a {{selectedShape}}, please input the required variables.</p>
+<div class="input-container"
+  <ul>
+    <li ng-repeat="param in selectedShapeData[0].params">
+      {{param.name}}:
+      <input type="text" placeholder="text" ng-model="param.value">
+    </li>
+  </ul>
+</div>
+<div class="btn-container">
+  <button type="submit" ng-click="selectView3()">
+    Go to step {{stepNum+1}}
+  </button>
+  or <span ng-click="selectView4()"> Cancel </span>
+</div>

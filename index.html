@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body ng-app="areaCalculatorApp">
+  <header>
+    <p>
+      Shape Calculator 
+    </p>
+  </header>
+  <div class="main-container">
+    <div class="left-container">
+      <p class="font-large"> Welcome to Shape Calculator </p>
+      <p class="font-normal">
+        <b>Shape Calculator is an interactive web application. To the right you will find the 3 step application. Follow the instructions in each step. Clicking cancel will take you back to step1. Enjoy! </b>
+      </p>
+      <p class="font-normal">
+        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is paradisematic country, in which roasted parts of sentences fly into your mouth.
+      </p>
+      <p class="font-normal">
+        Even the all-powerful Ponting has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Lipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas.
+      </p>
+    </div>
+    <div class="mid-container">
+      <div class="shape-container" ng-controller="shapesController as sc">
+        <div ui-view></div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="vertical-banner-container">
+        <div>
+          <span> 120 x 240 Ad </span>
+          <span>(Vertical Banner)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer> </footer>
+  <script type="text/javascript" src="lib/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+  <script type="text/javascript" src="lib/angular-animate.js"></script>
+  <script type="text/javascript" src="shapesController.js"></script>
+  <script type="text/javascript" src="config.js"></script>
+</body>
+</html>

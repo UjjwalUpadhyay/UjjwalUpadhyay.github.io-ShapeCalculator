@@ -1,0 +1,36 @@
+  <p class="font-large middle"> Step {{stepNum}}: Select your shape </p>
+  <p class="font-normal"> Please select the shape that you would like to calculate the area of and press the button "Go to step 2" </p>
+  <div class="radio-options">
+    <ul class="font-normal">
+      <li>
+        <label for="rect">
+          <input id="rect" type="radio" name="shapes-options" ng-model="selectedShape" value="Rectangle">
+          Rectangle
+        </label>
+      </li>
+      <li>
+        <label for="circle">
+          <input id="circle" type="radio" name="shapes-options" ng-model="selectedShape" value="Circle">
+          Circle
+        </label>
+      </li>
+      <li>
+        <label for="square">
+          <input id="square" type="radio" name="shapes-options" ng-model="selectedShape" value="Square">
+          Square
+        </label>
+      </li>
+      <li>
+        <label for="ellipse">
+          <input id="ellipse" type="radio" name="shapes-options" ng-model="selectedShape" value="Ellipse">
+          Ellipse
+        </label>
+      </li>
+    </ul>
+  </div>
+  <div class="btn-container">
+    <button type="submit" ng-click="selectView2(selectedShape)">
+      Go to step {{stepNum+1}}
+    </button>
+    or <span ng-click="selectView4()"> Cancel </span>
+  </div>
